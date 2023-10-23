@@ -9,5 +9,5 @@ public class ClassA {
     public int age = 23;
     java.sql.Date sqldate;
     java.util.Date date = new java.util.Date();
-    { System.out.println("ClassA initialized");}
+    { System.out.println("ClassA initialized ");}
 }
