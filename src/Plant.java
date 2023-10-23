@@ -13,8 +13,8 @@ public class Plant {
     String[] habitat = {"Terrestrial","aerial","Aquatic"};
     String name;
 
-    public static void main(String[] args) {
-        System.out.println("Hello Plant");
+    public static void main(String[] marco) {
+        System.out.println("Hello Plant ");
     }
 
 //    create a flower if leaves is greater than 5 and
