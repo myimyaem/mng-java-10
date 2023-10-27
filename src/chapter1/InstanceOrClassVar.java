@@ -20,7 +20,7 @@ public class InstanceOrClassVar {
         programm3=null;
         System.gc();
         System.out.println("after gc");
-    }
+    }   
    
     
 }

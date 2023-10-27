@@ -46,6 +46,11 @@ public class JavaOps {
         // b+=a; b=(int)b+a;
         b+=a;
         System.out.println(b);
+        System.out.println( jOps instanceof JavaOps);
+        jOps = null;
+        System.out.println( jOps instanceof JavaOps);
+        
+
 
 
     }
