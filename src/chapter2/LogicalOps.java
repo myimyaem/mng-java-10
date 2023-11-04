@@ -38,7 +38,12 @@ public class LogicalOps {
             case 4: System.out.println("the number is 4");break;
             
 }
-        
+    //ternary operator (condition)? True:False;
+    //nested ternary operation
+    // (condition)? ((condition)? True:False):False;
+    // (condition)? True:((condition)? True:False);
+        String msg = (number_check%2==0) ? number_check+" is even number" : number_check+" is odd number";
+        System.out.println(msg);  
     }
     
 }
