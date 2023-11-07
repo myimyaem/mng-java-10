@@ -3,7 +3,7 @@ package chapter3;
 import java.util.Arrays;
 
 public class ArraySample {
-    public static void main(String[] args) {
+    public static void main(String... args) {
         int[] numbers2 = new int[]{42,55,99};
         int[] numAnimals,numBirds;
         int numAnimals2[],numBirds2;
@@ -32,6 +32,19 @@ public class ArraySample {
         for(String a: stringNumbers)
             System.out.print(a+" ");
         System.out.println();
+        System.out.println(Arrays.binarySearch(numBirds, 100));
+        System.out.println(totalAllInt(1,2,3,4,5,6,7,8,9,10));
+        // totalAllInt(new int[]{1,2,3,4,5,6,7,8,9,10});
+        int[][] differentSize = {{1, 4}, {3}, {9,8,7}};
+        System.out.println(differentSize);
+        // differentSize = {{1, 4}, {3}, {9,8,7},{1}}; error
+    }
+
+    static int totalAllInt(int... numbers){
+        int total = 0;
+        for(int number: numbers)
+            total+=number;
+        return total;
     }
     
 }
