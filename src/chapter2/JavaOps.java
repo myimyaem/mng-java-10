@@ -2,6 +2,9 @@ package chapter2;
 import chapter1.LocalVar;
 public class JavaOps {
     int person;
+    // JavaOps(){
+
+    // }
     public static void main(String[] args) {
         int expression1 = 10;
         int expression2 = 20;
