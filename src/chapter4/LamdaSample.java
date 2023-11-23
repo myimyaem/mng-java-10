@@ -22,7 +22,7 @@ public class LamdaSample {
         print(animals, a -> a.canSwim() && a.canHop() );
         
     }
-    static void print(List<Animal> animals,CheckTrait checker){
+    static void print(List<Animal> animals,Predicate<Animal> checker){
         for(Animal animal: animals){
             if( checker.test(animal))
                 System.out.println(animal);
@@ -49,16 +49,20 @@ class Animal {
         public String toString() { return species; }
     }
 
-interface CheckTrait {
-    boolean test(Animal a); 
+// interface CheckTrait {
+//     boolean test(Animal a); 
+// }
+
+// class CheckIfHopper implements CheckTrait {
+//         public boolean test(Animal a) {
+//             return a.canHop(); } 
+//         }
+
+// class CheckIfSwimmer implements CheckTrait {
+//         public boolean test(Animal a) {
+//             return a.canSwim(); } 
+      //}
+
+interface Predicate<T> { 
+    boolean test(T t); 
 }
-
-class CheckIfHopper implements CheckTrait {
-        public boolean test(Animal a) {
-            return a.canHop(); } 
-        }
-
-class CheckIfSwimmer implements CheckTrait {
-        public boolean test(Animal a) {
-            return a.canSwim(); } 
-        }
